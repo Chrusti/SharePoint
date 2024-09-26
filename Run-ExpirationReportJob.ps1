@@ -23,7 +23,7 @@ if ($tenantSettings.EnableVersionExpirationSetting) {
 
         # Create a new file version expiration report job
         New-SPOSiteFileVersionExpirationReportJob -Identity $siteUrl -ReportUrl "$siteReport" -Confirm:$False
-        if (!$error) {Write-Host -ForegroundColor Green "File version expiration report job created for site: $siteUrl"}
+        if (!$error) {Write-Host -ForegroundColor Green "File version expiration report job created at: $siteReport"}
     }
 }
 else {
