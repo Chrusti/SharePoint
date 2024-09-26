@@ -1,3 +1,8 @@
+### This script uses the new feature "Version History Limits" and creates a Report for the top 10 storage heavy SharePoint Online Sites
+### By default, all the reports are stored in the respective site and the default library "Shared Documents".
+
+### Please provide your admin URL
+
 $adminUrl = "https://XY-admin.sharepoint.com/"
 
 Connect-SPOService -Url $adminUrl
